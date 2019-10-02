@@ -1,0 +1,26 @@
+mokdata
+
+Categorie
+ - verwarming
+ - voorziening
+ - sanitair
+ - culinair (muh hamburger)
+ - buiten
+ - overige
+Tickets
+ - categorie
+ - omschrijving
+ - status
+ - verstuurder
+ - datum
+ - prijs
+Profielen
+ - voornaam
+ - achternaam
+ - postcode
+ - straat + huisnummer
+ - email
+ - telefoonnummer
+DIY
+ - titel
+ - stappen
