@@ -1,0 +1,17 @@
+$white: #F8F8F8;
+$lightGrey: #E9E9E9;
+$grey: #D4D4D4;
+$darkGrey: #979797;
+$darkerGrey: #494949;
+$orange: #FC9403;
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin borderRadius($amount) {
+  -webkit-border-radius: $amount;
+  -moz-border-radius: $amount;
+  border-radius: $amount;
+}

@@ -1,0 +1,23 @@
+.home__logo {
+  width: 100%;
+  height: 80%;
+  margin: 15% 0;
+  text-align: center;
+}
+.home__logo__img {
+  width: 50%;
+  height: 80%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  padding: 5%;
+  border: solid #494949 2pt;
+}
+.home__links {
+  text-align: center;
+}
+.home__links__button {
+  padding: 2.5% 2%;
+}
+
+/*# sourceMappingURL=home.css.map */

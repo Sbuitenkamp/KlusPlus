@@ -1,0 +1,55 @@
+@import "global";
+.register {
+  text-align: left;
+  margin: 0 auto;
+  @include widthHeight(80%, 100%);
+  &__title {
+    text-align: center;
+  }
+  &__form {
+    &__input {
+      margin: 5% 0;
+      &__value {
+        background-color: $darkGrey;
+        border: none;
+        color: $white;
+        padding: 2% 1%;
+        @include widthHeight(100%, 10%);
+      }
+    }
+    &__checkbox {
+      &__value {
+        float: left;
+        text-align: center;
+        background-color: $darkerGrey;
+        color: $white;
+        padding: 9px;
+        border-radius: 3px;
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        @include widthHeight(10%, 5%);
+        &:checked {
+          color: $orange;
+        }
+        &:after {
+          content: '\2714';
+        }
+      }
+      &__text {
+        padding: 2%;
+      }
+    }
+  }
+  &__links {
+    margin-top: 25%;
+    @include widthHeight(100%, 25%);
+    &__back {
+      float: left;
+    }
+    &__forward {
+      float: right;
+    }
+  }
+}
