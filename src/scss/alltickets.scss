@@ -1,0 +1,15 @@
+@import "global";
+.all-tickets {
+  &__header {
+    &__arrow {
+      color: $white;
+      font-size: 40px;
+      margin: 20px;
+      float: left;
+    }
+    &__title {
+      margin: 0 auto;
+      float: left;
+    }
+  }
+}

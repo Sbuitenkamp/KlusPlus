@@ -16,5 +16,13 @@
     &__button {
       padding: 2.5% 2%;
     }
+    &__overview {
+      display: block;
+      text-decoration: none;
+      color: $darkerGrey;
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 }

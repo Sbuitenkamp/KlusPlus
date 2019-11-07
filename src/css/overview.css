@@ -1,34 +1,36 @@
-.add-order {
+.overview {
   text-align: left;
   margin: 0 auto;
   width: 80%;
   height: 100%;
 }
-.add-order__title {
+.overview__title {
   text-align: center;
 }
-.add-order__form__input {
+.overview__form__input, .overview__form__date {
   margin: 6% 0;
 }
-.add-order__form__input__value {
+.overview__form__input__value, .overview__form__date__value {
   background-color: #979797;
   border: none;
   color: #F8F8F8;
   padding: 2% 0;
   margin-top: 1%;
+}
+.overview__form__input__value, .overview__form__date__value {
   width: 100%;
   height: 10%;
 }
-.add-order__links {
+.overview__links {
   margin-top: 25%;
   width: 100%;
   height: 25%;
 }
-.add-order__links__back {
+.overview__links__back {
   float: left;
 }
-.add-order__links__forward {
+.overview__links__forward {
   float: right;
 }
 
-/*# sourceMappingURL=addorder.css.map */
+/*# sourceMappingURL=overview.css.map */

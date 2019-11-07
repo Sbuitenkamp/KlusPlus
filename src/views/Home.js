@@ -13,6 +13,7 @@ export const Home = () => (
             <Link className={"home__links__button button"} to={"/register"}>
                 <Button>DIRECT REPARATIE AANVRAGEN</Button>
             </Link>
+            <Link className={"home__links__overview"} to={"/alltickets"}>Overzicht</Link>
         </div>
     </div>
 );
