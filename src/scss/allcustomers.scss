@@ -1,0 +1,68 @@
+@import "global";
+.customer {
+  &__header {
+    @include widthHeight(100vw, 15vh);
+    text-align: center;
+    &__arrow {
+      color: $white;
+      font-size: 40px;
+      margin: 20px;
+      float: left;
+    }
+    &__title {
+      float: left;
+      padding-top: 1%;
+      margin-left: 6%;
+    }
+  }
+  &__details {
+    background-color: $lightGrey;
+    padding: 2%;
+  }
+}
+
+.all-customers {
+  &__header {
+    @include widthHeight(100vw, 15vh);
+    text-align: center;
+    &__arrow {
+      color: $white;
+      font-size: 40px;
+      margin: 20px;
+      float: left;
+    }
+    &__title {
+      float: left;
+      padding-top: 1%;
+      margin-left: 6%;
+    }
+  }
+  &__content {
+    &__list {
+      // doesn't work🤔
+      overflow-scrolling: touch;
+      -webkit-overflow-scrolling: touch;
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      &__item {
+        padding: 1% 3%;
+        &__content {
+          text-decoration: none;
+          color: #000;
+          height: 20%;
+          &:active {
+            color: $orange;
+          }
+        }
+      }
+      &__item:nth-child(odd) {
+        background-color: $white;
+      }
+      &__item:nth-child(even) {
+        background-color: $lightGrey;
+      }
+    }
+  }
+}

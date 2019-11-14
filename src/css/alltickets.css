@@ -1,12 +1,66 @@
+.all-tickets__header {
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+}
 .all-tickets__header__arrow {
   color: #F8F8F8;
   font-size: 40px;
   margin: 20px;
+}
+.all-tickets__header__arrow--left {
   float: left;
 }
+.all-tickets__header__arrow--right {
+  float: right;
+}
 .all-tickets__header__title {
-  margin: 0 auto;
   float: left;
+  padding-top: 1%;
+  margin-left: 6%;
+}
+.all-tickets__content__list {
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.all-tickets__content__list__item__content {
+  height: 20%;
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  grid-template-columns: 1fr 1fr;
+}
+.all-tickets__content__list__item__content__description, .all-tickets__content__list__item__content__first-name, .all-tickets__content__list__item__content__category, .all-tickets__content__list__item__content__date, .all-tickets__content__list__item__content__time, .all-tickets__content__list__item__content__status {
+  margin: 5%;
+}
+.all-tickets__content__list__item__content__description, .all-tickets__content__list__item__content__first-name, .all-tickets__content__list__item__content__category {
+  grid-column: 1;
+  text-align: left;
+}
+.all-tickets__content__list__item__content__date, .all-tickets__content__list__item__content__time, .all-tickets__content__list__item__content__status {
+  grid-column: 2;
+  text-align: right;
+}
+.all-tickets__content__list__item__content__description, .all-tickets__content__list__item__content__date {
+  grid-row: 1;
+}
+.all-tickets__content__list__item__content__time {
+  grid-row: 2;
+}
+.all-tickets__content__list__item__content__first-name {
+  grid-row: 3;
+}
+.all-tickets__content__list__item__content__category, .all-tickets__content__list__item__content__status {
+  grid-row: 4;
+}
+.all-tickets__content__list__item:nth-child(odd) {
+  background-color: #F8F8F8;
+}
+.all-tickets__content__list__item:nth-child(even) {
+  background-color: #E9E9E9;
 }
 
 /*# sourceMappingURL=alltickets.css.map */

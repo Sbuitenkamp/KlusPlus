@@ -5,6 +5,7 @@ import { Register } from './views/Register';
 import { AddOrder } from './views/AddOrder';
 import { Overview } from './views/Overview';
 import { AllTickets } from './views/AllTickets';
+import { AllCustomers } from './views/AllCustomers';
 import './App.css';
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
                         <Route path="/addorder" component={AddOrder}></Route>
                         <Route path="/overview" component={Overview}></Route>
                         <Route path="/alltickets" component={AllTickets}></Route>
+                        <Route path="/allcustomers/:id?" component={AllCustomers}></Route>
                     </Switch>
                 </Router>
             </React.Fragment>

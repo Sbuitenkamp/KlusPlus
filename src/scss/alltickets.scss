@@ -1,15 +1,71 @@
 @import "global";
 .all-tickets {
   &__header {
+    @include widthHeight(100vw, 15vh);
+    text-align: center;
     &__arrow {
       color: $white;
       font-size: 40px;
       margin: 20px;
-      float: left;
+      &--left {
+        float: left;
+      }
+      &--right {
+        float: right;
+      }
     }
     &__title {
-      margin: 0 auto;
       float: left;
+      padding-top: 1%;
+      margin-left: 6%;
+    }
+  }
+  &__content {
+    &__list {
+      // doesn't work🤔
+      overflow-scrolling: touch;
+      -webkit-overflow-scrolling: touch;
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      &__item {
+        &__content {
+          height: 20%;
+          display: grid;
+          grid-template-rows: repeat(4, 50px);
+          grid-template-columns: 1fr 1fr;
+          &__description, &__first-name, &__category, &__date, &__time, &__status {
+            margin: 5%;
+          }
+          &__description, &__first-name, &__category {
+            grid-column: 1;
+            text-align: left;
+          }
+          &__date, &__time, &__status {
+            grid-column: 2;
+            text-align: right;
+          }
+          &__description, &__date {
+            grid-row: 1;
+          }
+          &__time {
+            grid-row: 2;
+          }
+          &__first-name {
+            grid-row: 3;
+          }
+          &__category, &__status {
+            grid-row: 4;
+          }
+        }
+      }
+      &__item:nth-child(odd) {
+        background-color: $white;
+      }
+      &__item:nth-child(even) {
+        background-color: $lightGrey;
+      }
     }
   }
 }
